@@ -15,14 +15,14 @@ jobs:
         # submodules: 'recursive'     ### possibly needed in your situation
 
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
-    - name: Pull (Fast-Forward) upstream changes
+    - name: Pull upstream changes
       id: sync
       uses: aormsby/Fork-Sync-With-Upstream-action@v2.0
       with:
         upstream_repository: SmartThingsCommunity/SmartThingsPublic
         upstream_branch: master
         target_branch: master
-        git_pull_args: --ff-only                    # optional arg use, defaults to simple 'pull'
+        # git_pull_args: --ff-only                    # optional arg use, defaults to simple 'pull'
         # github_token: ${{ secrets.GITHUB_TOKEN }}   # optional, for accessing repos that require authentication
 
     # Step 3: Display a message if 'sync' step had new commits (simple test)
