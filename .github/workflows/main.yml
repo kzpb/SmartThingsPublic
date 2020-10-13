@@ -8,13 +8,13 @@
     github_token: # optional
     
     # Upstream repository, e.g. => aormsby/Fork-Sync-With-Upstream-action
-    upstream_repository: 
+    upstream_repository: SmartThingsCommunity/SmartThingsPublic
     
     # Branch to sync from, e.g. => main, master, dev
-    upstream_branch: 
+    upstream_branch: master
     
     # Branch to push to, e.g. => main, master, prod
-    target_branch: 
+    target_branch: master
     
     # Any extra args to pass to `git checkout` like --recurse-submodules (only used when current branch is not target_branch), default = ""
     git_checkout_args: # optional, default is 
